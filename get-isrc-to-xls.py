@@ -25,7 +25,6 @@
     "import spotipy\n",
     "import os\n",
     "from spotipy.oauth2 import SpotifyClientCredentials\n",
-    "from xlrd import open_workbook, cellname\n",
     "from xlrd import open_workbook, cellname"
    ]
   },
@@ -35,8 +34,8 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "SPOTIPY_CLIENT_ID = '1eaf33e1f22748dea01e4843efe2f39d'\n",
-    "SPOTIPY_CLIENT_SECRET = '9d8e432c2b474faca94b632803d8b5f7'"
+    "SPOTIPY_CLIENT_ID = 'CLIENT ID'\n",
+    "SPOTIPY_CLIENT_SECRET = 'CLIENT SECRET'"
    ]
   },
   {
@@ -51,101 +50,30 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 15,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [
     {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "070 Phi - Good Contracts.pdfspotify:track:4vcuBbi9uRXVlMYQ7Ptyyk\n",
-      "Agoria - Youre Not Alone.pdfspotify:track:7p9w9UuTQPbzU6dXlSdTwB\n",
-      "Anuel Aa - Secreto.pdfspotify:track:5W83ErFkO3aKAIS1WMi6u0\n",
-      "Ariana Grande - 7 Rings.pdfspotify:track:14msK75pk3pA33pzPVNtBF\n",
-      "Asiahn - Curiosity.pdfspotify:track:7cGzEpKCeLvODoxLFy7ntV\n",
-      "Bad Child - Payback.pdfspotify:track:0cxkyGalbYIWXELfgzMqnL\n",
-      "Benny Blanco & Calvin Harris - I Found You.pdfspotify:track:3eVuglKxN2sjoIGHAsFAge\n",
-      "Billie Eilish - WHEN I WAS OLDER (Music Inspired By The Film ROMA).pdfspotify:track:7tGEAA1f8MydT7eVbbO9Zy\n",
-      "Brooks - Limbo - Zoe Moss.pdfspotify:track:6nsxxd4yf7fgSEKPdWGuPb\n",
-      "BRWN - So Good.pdfspotify:track:6j7kLm6Hh2GW2c9Bmqdvp2\n",
-      "Dean Lewis - Seven Minutes.pdfspotify:track:2BkyYZmU4JuWW2sYi9EzpC\n",
-      "DJ Snake - Taki, Taki.pdfspotify:track:4w8niZpiMy6qz1mntFA5uM\n",
-      "Fazura - Can’t Forget Me.pdfspotify:track:5mpaksma0ejXr79dPrYwAQ\n",
-      "Grey - Want You Back?.pdfspotify:track:0BWx2N8CosqHVKkofenY3R\n",
-      "Hozier - Movement.pdfspotify:track:6zmANU5l4qCHQrI5cZhSS2\n",
-      "J.S. Ondara - Saying Goodbye.pdfspotify:track:50EByJQioc5CQYbEZEbW9O\n",
-      "Jada - Lonely.pdfspotify:track:4hxQsbgMpcp4Y0YSfIVdtx\n",
-      "James Blake - Mile High.pdfspotify:track:4cQrSREMqBSvJ8ZzBZjVb8\n",
-      "Lady Gaga - Always Remember Us This Way.pdfspotify:track:2rbDhOo9Fh61Bbu23T2qCk\n",
-      "Logic - Keanu Reeves.pdfspotify:track:7AnNzyovHm8UEPW5kNM8Fj\n",
-      "LOVA - My Name Isnt.pdfspotify:track:0922QmPCA8PuDb19cXKKw3\n",
-      "Mabel - Don’t Call Me Up.pdfspotify:track:5WHTFyqSii0lmT9R21abT8\n",
-      "Metro Boomin - Space Cadet (feat. Gunna).pdfspotify:track:1fewSx2d5KIZ04wsooEBOz\n",
-      "Mustard - Pure Water (ft. Migos).pdfspotify:track:63cd4JkwGgYJrbOizbfmsp\n",
-      "Nicole Bus - You.pdfspotify:track:5wUBONclIQRIFrsPzW5TiY\n",
-      "Sally - Calculated.pdfspotify:track:4w95mqytGP8C7RgbjHuPsQ\n",
-      "Sean Paul - Shot & Wine ft Stefflon Don.pdfspotify:track:1M1k3Sxtf7u8Zj3eIzrJm0\n",
-      "Sebastian Yatra - Un Año (feat. Reik).pdfspotify:track:5BDP2tky8oMQJPS33frKVp\n",
-      "SHAED - Trampoline.pdfspotify:track:0lsRatBUs9HNIZAmoGABzk\n",
-      "Shawn Mendes, Zedd - Lost In Japan Remix.pdfspotify:track:575NJxNUVDqwJGdzBrlLbv\n",
-      "Sigrid - Don’t Feel Like Crying.pdfspotify:track:1oLSje4Ot5qRUq8FqYeXOl\n",
-      "The Killers - Land Of The Free.pdfspotify:track:489qGxxMxFWIFgtNYFzlAz\n",
-      "Yung Gravy - Alley Oop.pdfspotify:track:2GyHLJ238fZx2QkQO9v7nV\n",
-      "Yungblud - Loner.pdfspotify:track:5QMmZqzh93EY6gJG4PmzHA\n"
+     "ename": "IOError",
+     "evalue": "[Errno 2] No such file or directory: 'EXCEL FILE ADDRESS'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mIOError\u001b[0m                                   Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-1-263b33bb6586>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      7\u001b[0m \u001b[0mloc\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;33m(\u001b[0m\u001b[1;34m\"EXCEL FILE ADDRESS\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      8\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 9\u001b[1;33m \u001b[0mwb\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mxlrd\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mopen_workbook\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mloc\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     10\u001b[0m \u001b[0msheet\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mwb\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msheet_by_index\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     11\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32mC:\\Users\\ctang\\Anaconda2\\lib\\site-packages\\xlrd\\__init__.pyc\u001b[0m in \u001b[0;36mopen_workbook\u001b[1;34m(filename, logfile, verbosity, use_mmap, file_contents, encoding_override, formatting_info, on_demand, ragged_rows)\u001b[0m\n\u001b[0;32m    114\u001b[0m         \u001b[0mpeek\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mfile_contents\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;33m:\u001b[0m\u001b[0mpeeksz\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    115\u001b[0m     \u001b[1;32melse\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 116\u001b[1;33m         \u001b[1;32mwith\u001b[0m \u001b[0mopen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mfilename\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"rb\"\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    117\u001b[0m             \u001b[0mpeek\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mread\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mpeeksz\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    118\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0mpeek\u001b[0m \u001b[1;33m==\u001b[0m \u001b[1;34mb\"PK\\x03\\x04\"\u001b[0m\u001b[1;33m:\u001b[0m \u001b[1;31m# a ZIP file\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mIOError\u001b[0m: [Errno 2] No such file or directory: 'EXCEL FILE ADDRESS'"
      ]
-    },
-    {
-     "data": {
-      "text/plain": [
-       "{u'070 Phi - Good Contracts': u'QM8RL1900732',\n",
-       " u'Agoria - Youre Not Alone': u'FR00Y1800048',\n",
-       " u'Anuel Aa - Secreto': u'USXDR1900020',\n",
-       " u'Ariana Grande - 7 Rings': u'USUM71900110',\n",
-       " u'Asiahn - Curiosity': u'QZEG41801243',\n",
-       " u'BRWN - So Good': u'PHUM71800158',\n",
-       " u'Bad Child - Payback': u'CAUM71800143',\n",
-       " u'Benny Blanco & Calvin Harris - I Found You': u'USUM71822027',\n",
-       " u'Billie Eilish - WHEN I WAS OLDER (Music Inspired By The Film ROMA)': u'USUM71900059',\n",
-       " u'Brooks - Limbo - Zoe Moss': u'NLDD61800222',\n",
-       " u'DJ Snake - Taki, Taki': u'USUG11801723',\n",
-       " u'Dean Lewis - Seven Minutes': u'AUUM71800254',\n",
-       " u'Fazura - Can\\u2019t Forget Me': u'MYUM71900001',\n",
-       " u'Grey - Want You Back?': u'USUM71814737',\n",
-       " u'Hozier - Movement': u'USSM11806792',\n",
-       " u'J.S. Ondara - Saying Goodbye': u'USUM71810630',\n",
-       " u'Jada - Lonely': u'DKUM71800767',\n",
-       " u'James Blake - Mile High': u'GBUM71807985',\n",
-       " u'LOVA - My Name Isnt': u'SEUM71800784',\n",
-       " u'Lady Gaga - Always Remember Us This Way': u'USUM71813195',\n",
-       " u'Logic - Keanu Reeves': u'USUM71900414',\n",
-       " u'Mabel - Don\\u2019t Call Me Up': u'GBUM71808052',\n",
-       " u'Metro Boomin - Space Cadet (feat. Gunna)': u'USUG11802484',\n",
-       " u'Mustard - Pure Water (ft. Migos)': u'USUM71823137',\n",
-       " u'Nicole Bus - You': u'QMJMT1801926',\n",
-       " u'SHAED - Trampoline': u'QZ47A1800201',\n",
-       " u'Sally - Calculated': u'NZBJ11800002',\n",
-       " u'Sean Paul - Shot & Wine ft Stefflon Don': u'GBUM71808086',\n",
-       " u'Sebastian Yatra - Un An\\u0303o (feat. Reik)': u'USUM71821048',\n",
-       " u'Shawn Mendes, Zedd - Lost In Japan Remix': u'USUM71813582',\n",
-       " u'Sigrid - Don\\u2019t Feel Like Crying': u'GBUM71807541',\n",
-       " u'The Killers - Land Of The Free': u'USUM71821044',\n",
-       " u'Yung Gravy - Alley Oop': u'USUM71821830',\n",
-       " u'Yungblud - Loner': u'USUG11800785'}"
-      ]
-     },
-     "execution_count": 15,
-     "metadata": {},
-     "output_type": "execute_result"
     }
    ],
    "source": [
-    "new_dict_3 = {}\n",
+    "new_dict = {}\n",
     "\n",
     "# Program extracting all columns \n",
     "# name in Python \n",
     "import xlrd \n",
-    "  \n",
-    "loc = (\"Desktop/2019-01-24.xls\")\n",
+    "       ##(\"address of excel file\")## \n",
+    "loc = (\"EXCEL FILE ADDRESS\")\n",
     "  \n",
     "wb = xlrd.open_workbook(loc) \n",
     "sheet = wb.sheet_by_index(0) \n",
@@ -158,9 +86,7 @@
     "    x = sheet.cell_value(i,0).split(\".pdfspotify:track:\")\n",
     "    track = sp.track(x[1])\n",
     "    isrc = track[\"external_ids\"][\"isrc\"]\n",
-    "    new_dict_3[x[0]] = isrc\n",
-    "    \n",
-    "new_dict_3"
+    "    new_dict[x[0]] = isrc ##saves dict with song identifier and uri as key pairs in dictionary"
    ]
   },
   {
@@ -171,12 +97,12 @@
    "source": [
     "#write dict into excel\n",
     "      ##(\"name of file\", \"a for append file\")##\n",
-    "f = open(\"2019-01-24(isrc).txt\", \"a\")\n",
-    "for key, value in new_dict_3.iteritems():\n",
+    "f = open(\"NAME OF FILE\", \"a\")\n",
+    "for key, value in new_dict.iteritems():\n",
     "    thing = key.encode(\"utf-8\") + \" - \" + value.encode(\"utf-8\") + \"\\n\" ##formats into \"Artist - Song Name - ISRC\" \n",
     "    f.write(thing)                                                     ##so that pasting them into file is streamlined\n",
     "    \n",
-    "f.close()\n"
+    "f.close()"
    ]
   }
  ],
