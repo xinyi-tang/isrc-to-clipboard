@@ -48,23 +48,7 @@
     "sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)"
    ]
   },
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {},
-   "outputs": [
-    {
-     "ename": "IOError",
-     "evalue": "[Errno 2] No such file or directory: 'EXCEL FILE ADDRESS'",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[1;31mIOError\u001b[0m                                   Traceback (most recent call last)",
-      "\u001b[1;32m<ipython-input-1-263b33bb6586>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m()\u001b[0m\n\u001b[0;32m      7\u001b[0m \u001b[0mloc\u001b[0m \u001b[1;33m=\u001b[0m \u001b[1;33m(\u001b[0m\u001b[1;34m\"EXCEL FILE ADDRESS\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m      8\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m----> 9\u001b[1;33m \u001b[0mwb\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mxlrd\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mopen_workbook\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mloc\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     10\u001b[0m \u001b[0msheet\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mwb\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0msheet_by_index\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     11\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;32mC:\\Users\\ctang\\Anaconda2\\lib\\site-packages\\xlrd\\__init__.pyc\u001b[0m in \u001b[0;36mopen_workbook\u001b[1;34m(filename, logfile, verbosity, use_mmap, file_contents, encoding_override, formatting_info, on_demand, ragged_rows)\u001b[0m\n\u001b[0;32m    114\u001b[0m         \u001b[0mpeek\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mfile_contents\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;33m:\u001b[0m\u001b[0mpeeksz\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    115\u001b[0m     \u001b[1;32melse\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 116\u001b[1;33m         \u001b[1;32mwith\u001b[0m \u001b[0mopen\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mfilename\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;34m\"rb\"\u001b[0m\u001b[1;33m)\u001b[0m \u001b[1;32mas\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    117\u001b[0m             \u001b[0mpeek\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mread\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mpeeksz\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    118\u001b[0m     \u001b[1;32mif\u001b[0m \u001b[0mpeek\u001b[0m \u001b[1;33m==\u001b[0m \u001b[1;34mb\"PK\\x03\\x04\"\u001b[0m\u001b[1;33m:\u001b[0m \u001b[1;31m# a ZIP file\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
-      "\u001b[1;31mIOError\u001b[0m: [Errno 2] No such file or directory: 'EXCEL FILE ADDRESS'"
-     ]
-    }
+ 
    ],
    "source": [
     "new_dict = {}\n",
